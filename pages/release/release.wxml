@@ -1,0 +1,43 @@
+<view class="container width_96">
+  <view class="mt_10 fs_15 bg_none over">本人特长</view>
+  <view class="list">
+    <input type="text" bindinput="bindJob" name="" value="" placeholder="所属行业" placeholder-style="color:#585858"></input>
+  </view>
+  <view class="list list_radio">
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio">
+        <radio color="#b50029" value="技术" />技术</label>
+      <label class="radio">
+        <radio color="#b50029" value="业务" />业务</label>
+      <label class="radio">
+        <radio color="#b50029" value="管理" />管理</label>
+      <label class="radio">
+        <radio color="#b50029" value="财务" />财务</label>
+      <label class="radio">
+        <radio color="#b50029" value="其他" />其他</label>
+    </radio-group>
+    <input hidden="{{isOther}}" type="text" name="" value="{{otherTradeType}}" bindinput="bindOtherJob" placeholder="请输入其他专业名称" placeholder-style="color:#585858"></input>
+  </view>
+  <view class="list list_radio">
+    <text class="list_title">寻找方向</text>
+    <radio-group class="radio-group" bindchange="radioChange2">
+      <label class="radio"><radio color="#b50029" value="技术" />技术</label>
+      <label class="radio"><radio color="#b50029" value="业务" />业务</label>
+      <label class="radio"><radio color="#b50029" value="管理" />管理</label>
+      <label class="radio"><radio color="#b50029" value="财务" />财务</label>
+      <label class="radio"><radio color="#b50029" value="其他" />其他</label>
+    </radio-group>
+  </view>
+  <view class="list">
+    <input type="text" bindinput="bindAge" name="" value="" maxlength="2" placeholder="请输入您的年龄" placeholder-style="color:#585858"></input>
+  </view>
+  <view class="list" bindtap="sexSelect">
+    <text class="sex">{{sexText}}</text>
+  </view>
+  <view class="list list_last">
+    <textarea placeholder="请输入详细信息" maxlength="-1" placeholder-style="color:#585858" bindinput="infoInsert" value="{{infoText}}"></textarea>
+  </view>
+  <view class="list bg_none">
+    <button class="btn fr color_f fs_14" hover-class="none" bindtap="releaseSubmitBtn">发布</button>
+  </view>
+</view>

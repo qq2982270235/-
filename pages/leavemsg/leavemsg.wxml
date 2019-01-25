@@ -1,0 +1,8 @@
+<view class="container width_96">
+  <view class="list">
+    <textarea placeholder="请输入留言信息" maxlength="-1" placeholder-style="color:#585858" bindinput="infoInsert" value="{{infoText}}"></textarea>
+  </view>
+  <view class="list bg_none">
+    <button class="btn fr color_f fs_14" hover-class="none" bindtap="releaseSubmitBtn">留言</button>
+  </view>
+</view>

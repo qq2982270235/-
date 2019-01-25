@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="search_wrap">
+    <view class="search_bar">
+      <icon type="search" color="#fff" size="20" class="ml_10 fl"></icon>
+      <input type="text" name="" value="" class="fl color_f fs_14 ml_5" bindinput="bindSearchVal" placeholder="请输入姓名或职位" placeholder-style="color:#fff"></input>
+      <button class="fr btn color_f fs_14 ml_5" hover-class="none" bindtap="searchSubmitBtn">搜索</button>
+    </view>
+  </view>
+  <view class="nav_bar">
+    <view class="bar_list {{barIndex==0?'cur':''}}" data-index="0" bindtap="changeBar">
+      <image src="/images/lookme_icon.png"></image>
+      <text>看过我的</text>
+    </view>
+    <view class="bar_list {{barIndex==1?'cur':''}}" data-index="1" bindtap="changeBar">
+      <image src="/images/folleme_icon.png"></image>
+      <text>我关注的</text>
+    </view>
+    <view class="bar_list border_none {{barIndex==2?'cur':''}}" data-index="2" bindtap="changeBar">
+      <image src="/images/follow_icon.png"></image>
+      <text>关注我的</text>
+    </view>
+  </view>
+  <view class="bar_wrap">
+    <block wx:for="{{dataList}}" wx:for-item="item" wx:key="id">
+      <view class="general_list" bindtap="goToUserInfo" data-userid="{{item.Guid}}">
+        <view class="list_left">
+          <image src="{{item.Images}}"></image>
+        </view>
+        <view class="list_right">
+          <view>
+            <text>姓名:{{item.Name}}</text>
+            <text class="fr fs_15 color_red text_right" wx:if="{{barIndex==1}}" data-userid="{{item.Guid}}" catchtap="bindDelFollow">取消关注</text>
+          </view>
+          <text>职业:{{item.Position}}</text>
+          <text>性别:{{item.Sex}}</text>
+        </view>
+      </view>
+    </block>
+    <!--没有信息-->
+    <view class="no_content" hidden="{{dataIsEmpty}}">
+      <image src="/images/no_content.png"></image>
+      <text>亲，暂无相关信息哦...</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="container">
+  <block wx:for="{{dataList}}" wx:for-item="item" wx:key="id" wx:for-index="index">
+    <navigator url="../talkinfo/talkinfo?userguid={{item.Guid}}&userid={{item.UserId}}" open-type="navigate">
+      <view class="general_list">
+        <view class="list_left">
+          <image src="{{item.UserImg}}"></image>
+        </view>
+        <view class="list_right">
+          <image src="/images/message_no.png" wx:if="{{item.IsRead==0}}"></image>
+          <text>姓名:{{item.UserNane}}</text>
+          <text>留言时间:{{item.CreateDate}}</text>
+          <text>{{item.Content}}</text>
+        </view>
+      </view>
+    </navigator>
+  </block>
+  <!--没有信息-->
+  <view class="no_content" hidden="{{dataIsEmpty}}">
+    <image src="/images/no_content.png"></image>
+    <text>亲，暂无相关信息哦...</text>
+  </view>
+</view>

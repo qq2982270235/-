@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="user_info">
+    <image class="block radius" src="{{wx_avatarUrl}}"></image>
+    <text class="block fs_15 text_center mt_20">{{wx_nickName}}</text>
+  </view>
+  <view wx:if="{{canIUse}}" class="flex">
+    <button class="authorize_btn" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">请先授权用户信息</button>
+  </view>
+  <view wx:else class="flex">
+    <text class="block fs_15 text_center mt_20">请升级微信版本</text>
+  </view>
+</view>

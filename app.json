@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/talk/talk",
+    "pages/talkinfo/talkinfo",
+    "pages/partner/partner",
+    "pages/signin/signin",
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/leavemsg/leavemsg",
+    "pages/userinfo/userinfo",
+    "pages/argument/argument",
+    "pages/search/search",
+    "pages/release/release",
+    "pages/myrelease/myrelease",
+    "pages/lookpartners/lookpartners",
+    "pages/releaseinfo/releaseinfo",
+    "pages/ability/ability"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b50029",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#585858",
+    "selectedColor": "#b50029",
+    "backgroundColor": "#f2f2f2",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/footnav_01.png",
+        "selectedIconPath": "images/footnavcur_01.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人",
+        "iconPath": "images/footnav_02.png",
+        "selectedIconPath": "images/footnavcur_02.png"
+      },
+      {
+        "pagePath": "pages/ability/ability",
+        "text": "牛人",
+        "iconPath": "images/footnav_03.png",
+        "selectedIconPath": "images/footnavcur_03.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

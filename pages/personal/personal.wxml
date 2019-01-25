@@ -1,0 +1,96 @@
+<view class="container">
+  <!--用户信息-->
+  <view class="user_info">
+    <view class="info_left fl fs_14 color_f">
+      <text>姓名:{{Name}}</text>
+      <text>性别:{{Sex}}</text>
+      <text>职业:{{Position}}</text>
+      <text>联系电话:{{Mobile}}</text>
+    </view>
+    <view class="info_right fr">
+      <image src="{{wx_avatarUrl}}"></image>
+    </view>
+  </view>
+  <!--导航-->
+  <view class="nav">
+    <view class="nav_list cur">
+      <image src="/images/perindex.png"></image>
+      <text>个人主页</text>
+    </view>
+    <view class="nav_list" bindtap="jumpMessage">
+      <image src="/images/chat_icon.png"></image>
+      <text>留言</text>
+    </view>
+    <view class="nav_list" bindtap="jumpRelease">
+      <image src="/images/release_icon.png"></image>
+      <text>发布</text>
+    </view>
+    <view class="nav_list border_none" bindtap="userInfoSubmitBtn">
+      <image src="/images/sure_icon.png"></image>
+      <text>确定</text>
+    </view>
+  </view>
+  <!--个人信息-->
+  <view class="person_wrap">
+    <view class="user_list">
+      <view class="user_item">
+          <picker mode="date" value="{{bornText}}" start="1950-01-01" end="2050-12-31" data-datetype="born" bindchange="bindDataSelect">
+            出生日期:{{bornText}}
+          </picker>
+      </view>
+      <view class="user_item" bindtap="marriageSelect">
+        <text>婚姻状况:{{marriageText}}</text>
+      </view>
+      <view class="user_item">
+        <text>籍贯:</text>
+        <input type="text" name="" value="{{nativeplaceText}}" bindinput="bindNativePlace" />
+      </view>
+      <view class="user_item">
+        <text>户口所在地:</text>
+        <input type="text" name="" value="{{addressText}}" bindinput="bindAddress" />
+      </view>
+      <view class="user_item" bindtap="educationSelect">
+          <text>学历:{{educationText}}</text>
+      </view>
+      <view class="user_item">
+          <picker mode="date" value="{{educationText}}" start="1950-01-01" end="2050-12-31" data-datetype="education" bindchange="bindDataSelect">
+            毕业日期:{{graduationText}}
+          </picker>
+      </view>
+      <view class="user_item" bindtap="politicalOutlookSelect">
+        <text>政治面貌:{{politicalText}}</text>
+      </view>
+      <view class="user_item">
+        <text>毕业院校:</text>
+        <input type="text" name="" value="{{schoolText}}" bindinput="bindSchool" />
+      </view>
+      <view class="user_item">
+        <text>专业:</text>
+        <input type="text" name="" value="{{majorText}}" bindinput="bindMajor" /> </view>
+    </view>
+    <view class="user_title">个人能力信息</view>
+    <view class="user_list">
+      <view class="user_item" bindtap="englishLevelSelect">
+        <text>英语水平:{{englishText}}</text>
+      </view>
+      <view class="user_item" bindtap="mandarinSelect">
+        <text>普通话:{{mandarinText}}</text>
+      </view>
+      <view class="user_item" bindtap="computerLevelSelect">
+        <text>计算机:{{computerText}}</text>
+      </view>
+      <view class="user_item">
+        <text>软件:</text>
+        <input type="text" name="" value="{{softwareText}}" bindinput="bindSoftware" auto-height="true" />
+      </view>
+    </view>
+    <view class="user_title">社会经历信息</view>
+    <view class="user_list user_special">
+      <textarea placeholder="请输入详细信息" id="text-area1" value="{{experienceText}}" maxlength="-1" placeholder-style="color:#585858" bindinput="bindExperience"  />
+    </view>
+    <view class="user_title">合作意向</view>
+    <view class="user_list user_special mb_10">
+      <textarea placeholder="请输入详细信息" id="text-area2" value="{{cooperationText}}" maxlength="-1" placeholder-style="color:#585858" bindinput="bindCooperation"  />
+    </view>
+  </view>
+</view>

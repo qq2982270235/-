@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="release_info" bindtap="goToUserInfo">
+    <view class="info_left">
+      <image src="{{UserImg}}"></image>
+    </view>
+    <view class="info_right">
+      <text>留言者:{{userName}}</text>
+      <text>留言时间:{{userTime}}</text>
+    </view>
+  </view>
+  <view class="release_list">
+    <text class="release_title">给您留的言</text>
+    <view class="last_info"><image src="/images/trangle_up.png"></image>{{userContent}}</view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<view class="container pb_10">
+  <block wx:for="{{dataList}}" wx:for-item="item" wx:key="id" wx:for-index="index">
+    <view class="general_list" bindtap="goToReleaseInfo" data-userguid="{{item.GuId}}" data-userid="{{item.UserId}}">
+      <view class="list_left">
+        <image src="{{item.PortraitImg}}"></image>
+      </view>
+      <view class="list_right">
+        <text>发布者:{{item.UserName}}</text>
+        <text>需求职业:{{item.TradeName}}</text>
+        <text>{{item.Content}}</text>
+      </view>
+    </view>
+  </block>
+  <!--没有信息-->
+  <view class="no_content" hidden="{{dataIsEmpty}}">
+    <image src="/images/no_content.png"></image>
+    <text>亲，暂无相关信息哦...</text>
+  </view>
+</view>

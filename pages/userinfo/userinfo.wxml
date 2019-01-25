@@ -1,0 +1,58 @@
+<view class="container">
+  <!--用户信息-->
+  <view class="user_info">
+    <view class="info_left fl fs_14 color_f">
+      <text>姓名:{{Name}}</text>
+      <text>性别:{{Sex}}</text>
+      <text>职业:{{Position}}</text>
+      <text>联系电话:{{Mobile}}</text>
+    </view>
+    <view class="info_right fr">
+      <image src="{{Images}}"></image>
+    </view>
+  </view>
+  <!--导航-->
+  <view class="nav usernav">
+    <view class="nav_list cur">
+      <image src="/images/person_icon.png"></image>
+      <text>个人信息</text>
+    </view>
+    <view class="nav_list" bindtap="followFriendBtn">
+      <image src="/images/follow_icon.png"></image>
+      <text>关注</text>
+    </view>
+    <view class="nav_list border_none" bindtap="jumpChat">
+      <image src="/images/chat_icon.png"></image>
+      <text>留言</text>
+    </view>
+  </view>
+  <!--个人信息-->
+  <view class="person_wrap">
+    <view class="user_list">
+      <view class="user_item">出生日期:{{BirthDate}}</view>
+      <view class="user_item">婚姻状况:{{Marriage}}</view>
+      <view class="user_item">籍贯:{{NativePlace}}</view>
+      <view class="user_item">户口所在地:{{RegisteredResidence}}</view>
+      <view class="user_item">学历:{{Education}}</view>
+      <view class="user_item">毕业日期:{{GraduationDate}}</view>
+      <view class="user_item">政治面貌:{{PoliticalOutlook}}</view>
+      <view class="user_item">毕业院校:{{UniversityCollege}}</view>
+      <view class="user_item">专业:{{Major}}</view>
+    </view>
+    <view class="user_title">个人能力信息</view>
+    <view class="user_list">
+      <view class="user_item">英语水平:{{EnglishLeve}}</view>
+      <view class="user_item">普通话:{{Mandarin}}</view>
+      <view class="user_item">计算机:{{Computer}}</view>
+      <view class="user_item">软件:{{Software}}</view>
+    </view>
+    <view class="user_title">社会经历信息</view>
+    <view class="user_list user_special">
+      <view class="user_item">{{Experience}}</view>      
+    </view>
+    <view class="user_title">合作意向</view>
+    <view class="user_list user_special">
+      <view class="user_item">{{ExperienceIntention}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+.release_info, .release_list{
+  width: 100%;
+  height: auto;
+  padding: 2%;
+  display: flex;
+  color: #666;
+  font-size: 26rpx;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 16rpx;
+  justify-content: space-between;
+  border-bottom:16rpx solid #dbdbdb;
+}
+.info_left{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info_right image{
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 100%;
+}
+.release_list{
+  padding:3% 2%;
+}
+.last_list{
+  border-bottom:none;
+  flex-direction: column;
+}
+.last_info{
+  width: 100%;
+  min-height:300rpx;
+  margin:20rpx auto 0;
+  padding:5px;
+  overflow: hidden;
+  font-size: 26rpx;
+  color: #585858;
+  text-align: justify;
+  line-height: 40rpx;
+  border-radius: 20rpx;
+  background: #dbdbdb;
+}

@@ -1,0 +1,44 @@
+@import '../ability/ability';
+.search_bar{
+  width: 96%;
+  height: 60rpx;
+  overflow: hidden;
+  border-radius: 30rpx;
+  margin:20rpx auto 30rpx;
+  background: rgba(0,0,0,.2);
+}
+.search_bar icon{
+  margin-top:13rpx;
+}
+.search_bar input{
+  width: 71%;
+  height: 100%;
+}
+.search_bar .btn{
+  height: 60rpx;
+  line-height: 60rpx;
+  background: unset;
+}
+
+
+.general_list .list_right view{
+  width: 100%;
+  color: #666;
+  display: block;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+.general_list .list_right view:last-child{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.general_list .list_right .right_mid{
+  font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="banner">
+    <image src="/images/signin_banner.jpg" mode=""></image>
+  </view>
+  <view class="upload_header">
+    <image src="{{wx_avatarUrl}}"></image>
+  </view>
+  <view class="list list_name">
+    <text>姓名:</text>
+    <input type="text" bindinput="bindName" name="" value="" placeholder="请输入姓名" />
+  </view>
+  <view class="list list_idcard">
+    <image src="/images/idcard_icon.png"></image>
+    <text>身份证号码:</text>
+    <input type="text" bindinput="bindIdcard" name="" value="" maxlength="18" placeholder="请输入身份证号码" />
+  </view>
+  <view class="list list_phone">
+    <image src="/images/phone_icon.png"></image>
+    <text>手机号:</text>
+    <input type="text" bindinput="bindPhone" name="" value="" maxlength="11" placeholder="请输入手机号" />
+  </view>
+  <view class="list list_yzm">
+    <image src="/images/yzm_icon.png"></image>
+    <text>验证码:</text>
+    <input type="text" bindinput="bindYzm" name="" value="" maxlength="6" placeholder="请输入验证码" />
+    <button class="yzm_btn fs_13 fr" hover-class="none" disabled="{{codeDisabled}}" bindtap="getCode">{{codeText}}</button>
+  </view>
+  <view class="list list_job">
+    <image src="/images/job_icon.png"></image>
+    <text>职位:</text>
+    <input type="text" bindinput="bindJob" name="" value="" placeholder="请输入职位" />
+  </view>
+  <view class="argument fs_12">
+    <label>
+      <checkbox-group bindchange="checkboxChange">
+        <checkbox></checkbox>
+        <text>我已经阅读并同意</text>
+      </checkbox-group>
+    </label>
+    <navigator class="color_red" url="../argument/argument">《合伙人注册协议》</navigator>
+  </view>
+  <view class="list border_none">
+    <button class="btn color_f" hover-class="none" bindtap="signinSubmitBtn">注册</button>
+  </view>
+</view>

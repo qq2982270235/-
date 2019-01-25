@@ -1,0 +1,98 @@
+.user_info{
+  width: 100%;
+  height: 260rpx;
+  padding:0 4%;
+  display: flex;
+  background: #b50029;
+}
+.user_info .info_left{
+  width: 66%;
+  height: 100%;
+  flex: 1;
+  flex-direction: column;
+}
+.user_info .info_left text{
+  display: block;
+  line-height: 40rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.user_info .info_left text:nth-child(1){
+  margin-top:46rpx;
+}
+.user_info .info_right{
+  width: 200rpx;
+  height: 200rpx;
+  overflow: hidden;
+  display: flex;
+  margin-top:30rpx;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.user_info .info_right image{
+  display: block;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 100%;
+}
+.nav{
+  width: 100%;
+  height: 80rpx;
+  font-size: 28rpx;
+}
+.nav_list{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  float:left;
+  background: #dbdbdb;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+}
+.usernav .nav_list{
+  width: 33.3333%!important;
+}
+.nav_list image{
+  width: 40rpx;
+  height: 41rpx;
+  margin-right:4rpx;
+}
+.nav_list.cur{
+  background: #f1f1f1;
+}
+.person_wrap{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.user_title{
+  width: 100%;
+  height: 60rpx;
+  padding:0 4%;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  background: #dbdbdb;
+}
+.user_list{
+  width: 100%;
+  height: auto;
+  font-size: 26rpx;
+  overflow: hidden;
+  padding: 10rpx 3%;
+}
+.user_list .user_item{
+  width: 50%;
+  height: auto;
+  float: left;
+  padding:10rpx 10rpx 10rpx 0;
+  text-align: justify;
+}
+.user_special .user_item{
+  width: 100%;
+  height: auto;
+  float: unset;
+  overflow: hidden;
+}

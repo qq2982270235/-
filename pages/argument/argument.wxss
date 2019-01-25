@@ -1,0 +1,10 @@
+.list{
+  width: 100%;
+  height: auto;
+  font-size: 30rpx;
+  font-weight: 600;
+  overflow: hidden;
+  line-height: 44rpx;
+  text-align: justify;
+  padding-bottom:16rpx;
+}

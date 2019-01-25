@@ -1,0 +1,11 @@
+@import '../ability/ability';
+.list_right{
+  position: relative;
+}
+.list_right image{
+  width: 46rpx;
+  height: 46rpx;
+  position: absolute;
+  right: 0;
+  top:0;
+}

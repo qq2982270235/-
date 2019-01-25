@@ -1,0 +1,140 @@
+page{
+  background: #dbdbdb;
+}
+.banner_wrap, .nav_wrap, .list_wrap{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin:0 auto 16rpx;
+}
+.home-swiper {
+  width: 100%;
+  height: 350rpx;
+  position: relative;
+}
+.home-swiper image {
+  width: 100%;
+  height: 100%;
+}
+.dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: absolute;
+  bottom:80rpx;
+  width: 90%;
+  left:5%;
+  height: 50rpx;
+}
+.dots .dot {
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 12rpx;
+  background: #151959;
+  border-radius: 20rpx;
+  opacity: 0.44;
+}
+.dots .actives {
+  opacity: 1;
+  background-color: #024393;
+}
+.search{
+  width: 90%;
+  height: 60rpx;
+  position: absolute;
+  bottom:30rpx;
+  left:5%;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(255,255,255,.5);
+}
+.nav_list{
+  width: 33.33333%;
+  height:auto;
+  float: left;
+  margin-top:10rpx;
+  overflow: hidden;
+  position: relative;
+}
+.nav_list image{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+  margin:0 auto;
+}
+.nav_list text{
+  display: block;
+  font-size: 28rpx;
+  text-align: center;
+}
+.nav_list .msg_num{
+  position: absolute;
+  top:6px;
+  left:60%;
+  padding:0 2px;
+  font-size: 22rpx;
+  color: #fff;
+  background: red;
+  border-radius: 100%;
+  min-width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.list_item{
+  width: 100%;
+  height: auto;
+  padding: 2% 1%;
+  display: flex;
+  overflow: hidden;
+  margin-bottom:16rpx;
+  background: #fff;
+  min-height:210rpx;
+   border-radius: 10rpx;
+}
+.list_item .item_left{
+  width: 160rpx;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index:1;
+  justify-content: space-between;
+}
+.list_item image{
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 100%;
+}
+.list_item .item_right{
+  margin-left:10rpx;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.list_item .item_right view{
+  width: 100%;
+  color: #666;
+  display: block;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+.list_item .item_right view:last-child{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.list_item .item_right .right_mid{
+  font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,64 @@
+page{
+  background: #dbdbdb;
+}
+.release_info, .release_list{
+  width: 100%;
+  height: auto;
+  display: flex;
+  color: #666;
+  font-size: 26rpx;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.release_info{
+  padding: 4% 2% 2%;
+}
+.info_left image{
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 100%;
+}
+.info_right{
+  display: flex;
+  flex:1;
+  margin-left:50rpx;
+  flex-direction: column;
+  justify-content: center;
+}
+.release_list{
+  margin-top:50rpx;
+  flex-direction: column;
+}
+.release_title{
+  width: 100%;
+  display: block;
+  padding-left:2%;
+}
+.release_list image{
+  display: block;
+  width: 48rpx;
+  height: 48rpx;
+  margin-top:-50rpx;
+  margin-left:30rpx;
+}
+.last_info{
+  padding:3% 2%;
+  width: 100%;
+  min-height:400rpx;
+  font-size: 26rpx;
+  color: #585858;
+  text-align: justify;
+  line-height: 40rpx;
+  background: #fff;
+  margin-top:30rpx;
+}
+.btn {
+  margin-top:50rpx;
+  margin-right:3%;
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 40rpx;
+  background: #b50029;
+}

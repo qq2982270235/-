@@ -1,0 +1,70 @@
+page{
+  background: #dbdbdb;
+}
+.general_list{
+  width: 100%;
+  height: auto;
+  padding: 2%;
+  display: flex;
+  overflow: hidden;
+  margin-bottom:16rpx;
+  background: #fff;
+  min-height:210rpx;
+}
+.general_list .list_left{
+  width: 160rpx;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index:1;
+  justify-content: space-between;
+}
+.general_list .list_left image{
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 100%;
+}
+.general_list .list_left text{
+  position: absolute;
+  top:50%;
+  right:20rpx;
+  z-index:10;
+  width: 20rpx;
+  height: 20rpx;
+  margin-top:-70rpx;
+  border-radius: 100%;
+  background: #00963f;
+}
+.general_list .list_right{
+  margin-left:20rpx;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.general_list .list_right text, .general_list .list_right view{
+  display: block;
+  width: 100%;
+  font-size: 26rpx;
+  line-height: 40rpx;
+}
+.general_list .list_right view text{
+  width: 70%;
+  float:left;
+}
+.general_list .list_right view text.text_right{
+  width: 30%;
+}
+.general_list .list_right > text:last-child{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break:break-all;
+  white-space: normal !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

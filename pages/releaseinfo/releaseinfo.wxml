@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="release_info" bindtap="goToUserInfo">
+    <view class="info_left">
+      <text>发布者:{{userName}}</text>
+      <text>性别:{{userSex}}</text>
+      <text>职位:{{userPosition}}</text>
+    </view>
+    <view class="info_right">
+      <image src="{{userImg}}"></image>
+    </view>
+  </view>
+  <view class="release_list">
+    <text>需求能力</text>
+    <text>{{userTradeName}}</text>
+  </view>
+  <view class="release_list">
+    <text>年龄</text>
+    <text>{{userAge}}</text>
+  </view>
+  <view class="release_list last_list">
+    <text>详细信息</text>
+    <text class="last_info">{{userContent}}</text>
+  </view>
+</view>

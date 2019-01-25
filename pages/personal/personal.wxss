@@ -1,0 +1,36 @@
+@import '../userinfo/userinfo';
+.person_wrap .user_item{
+  display: flex;
+  width: 49%;
+  height: 60rpx;
+  padding:0;
+  color: #585858;
+  line-height: 60rpx;
+  margin-bottom:10rpx;
+  margin-top:10rpx;
+  background: #ccc;
+  border-radius: 20rpx;
+  padding-left:6rpx;
+}
+.person_wrap .user_item:nth-child(2n){
+  float:right;
+}
+.person_wrap .user_item picker{
+  width: 100%;
+}
+.person_wrap .user_item input{
+  flex: 1;
+  height: 60rpx;
+  font-size: 26rpx;
+}
+.person_wrap .user_list textarea{
+  width: 96%;
+  height:130rpx;
+  margin:0 auto;
+  padding:0 0 10rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+  color: #585858;
+  text-align: justify;
+  line-height: 40rpx;
+}

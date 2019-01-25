@@ -1,0 +1,17 @@
+.user_info{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.user_info image{
+  width: 200rpx;
+  height: 200rpx;
+  margin:100rpx auto 50rpx;
+}
+.authorize_btn{
+  width: 80%;
+  color: #fff;
+  margin-top:100rpx;
+  background: #b50029;
+  font-size: 30rpx;
+}

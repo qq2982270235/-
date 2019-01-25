@@ -1,0 +1,27 @@
+<view class="container pb_10">
+  <view class="search_bar">
+    <icon type="search" color="#fff" size="20" class="ml_10 fl"></icon>
+    <input type="text" name="" value="" class="fl color_f fs_14 ml_5" bindinput="bindSearchVal" placeholder="请输入姓名或职位" placeholder-style="color:#fff"></input>
+    <button class="fr btn color_f fs_14 ml_5" hover-class="none" bindtap="searchSubmitBtn">搜索</button>
+  </view>
+  <block wx:for="{{dataList}}" wx:for-item="item" wx:key="id" wx:for-index="index">
+    <view class="general_list" bindtap="goToReleaseInfo" data-userguid="{{item.GuId}}" data-userid="{{item.UserId}}">
+      <view class="list_left">
+        <image src="{{item.PortraitImg}}"></image>
+      </view>
+      <view class="list_right">
+        <!-- <text>发布者:{{item.UserName}}</text>
+        <text>需求职业:{{item.TradeName}}</text>
+        <text>{{item.Content}}</text> -->
+        <view class="fs_13">发布者:{{item.UserName}}</view>
+        <view class="right_mid"><text>所属行业:{{item.TradeName}}</text><text>自身优势:{{item.TradeType}}</text><text>寻找方向:{{item.Directions}}</text></view>
+        <view>特殊表述:{{item.Content}}</view>
+      </view>
+    </view>
+  </block>
+  <!--没有信息-->
+  <view class="no_content" hidden="{{dataIsEmpty}}">
+    <image src="/images/no_content.png"></image>
+    <text>亲，暂无相关信息哦...</text>
+  </view>
+</view>

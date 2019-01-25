@@ -1,0 +1,56 @@
+@import '../ability/ability';
+.bar_wrap{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.search_wrap{
+  width: 100%;
+  height: 100rpx;
+  overflow: hidden;
+  background: #fff;
+}
+.search_bar{
+  width: 96%;
+  height: 60rpx;
+  overflow: hidden;
+  border-radius: 30rpx;
+  margin:20rpx auto;
+  background: rgba(0,0,0,.2);
+}
+.search_bar icon{
+  margin-top:13rpx;
+}
+.search_bar input{
+  width: 71%;
+  height: 100%;
+}
+.search_bar .btn{
+  height: 60rpx;
+  line-height: 60rpx;
+  background: unset;
+}
+.nav_bar{
+  width: 100%;
+  height: 100rpx;
+  font-size: 26rpx;
+}
+.nav_bar .bar_list{
+  width: 33.33333%;
+  height: 100%;
+  display: flex;
+  float:left;
+  flex-direction: column;
+  background: #ededed;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+}
+.nav_bar .bar_list image{
+  width: 40rpx;
+  height: 41rpx;
+  margin-bottom:6rpx;
+}
+.bar_list.cur{
+  background: #dbdbdb;
+}
