@@ -28,6 +28,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    apiUrl: 'https://www.bigvary.com',//request域名
+    apiUrl: 'https://www.xxx.com',//request域名
   }
 })
